@@ -21,10 +21,10 @@ public class ImplementationService {
 	private IClientRepository clientRepository;
 	
 	@RequestMapping("/save")
-	public Client saveClient(Client p) {
+	public Client saveClient(Client c) {
 		
-		clientRepository.save(p);
-		return p ;
+		clientRepository.save(c);
+		return c ;
 	}
 	
 	
@@ -64,8 +64,8 @@ public class ImplementationService {
 	}
 	
 	@RequestMapping("update")
-	public Client update(Client p) {
-		clientRepository.save(p);
-		return p;
+	public Client update(Client c) {
+		clientRepository.save(c);
+		return c;
 	}
 }
